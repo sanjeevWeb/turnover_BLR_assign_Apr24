@@ -33,6 +33,10 @@ app.use('/api/v1', router);
 app.use('/api/v1', verifyRouter);
 app.use('/api/v1', productRoute);
 
+app.get('/', (req,res) => {
+    res.send("Hello world") // for testing 
+})
+
 sequelize.sync({ force: false })
     .then(() => {
         console.log('tables created successfully');

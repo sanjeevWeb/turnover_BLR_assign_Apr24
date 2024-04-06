@@ -1,0 +1,43 @@
+Note -> This assignment is focused on Backend , although i could not work much on frontend
+ due to lack of time, still there is functional frontend in vanilla js.
+
+********Run this locally**********
+
+1) Navigate to a folder , open terminal and (net connection required), type in cmd
+
+>> git clone https://github.com/sanjeevWeb/turnover_BLR_assign_Apr24.git
+
+2) make a .env file and and make variables DATABASE_URL = {NEON CONNECTION STRING HERE}, 
+	
+
+3) run, >> npm install , for required dependencies
+
+4) go to frontend folder, open signup.html and fill the required fields (server should be running)
+ then login.html and login but it would FAIL as need to verify email first
+
+5) Email should be valid as the verification service provider (sendinblue here) will send a mail
+ to registered mail id.
+
+6) after verification (type 12345678 in otp field), you will access main page
+
+7) in main page , you will see a list and a checkbox before it , next and prev button and a "save my choice" button
+
+8) go back and forth by clicking buttons, Here since i worked very less on frontend, when next 
+
+button is clicked , previously selected boxes become unchecked again, so at one page(i.e. 6 items),
+select and save it first then vlick next or prev button.
+
+**********backend part***********
+9) In backend all these selected items are going as an array of Ids. and handled accordingly.
+
+10) user and checkedProduct model/table has M-N relation, and handled accordingly.
+
+11) I have used bcryptjs to hash password and jsonwebtoken to authorize user because this is how
+which user is selectng which product
+
+12) ** Initially I created a products table and and saved the 100 faker products to it, but while
+executing code it created a lot of problems and annoyed me, bulkCreate method stopped working ,
+so i created a "product.json " file and stored 100 products in it.
+
+14) App is running fine in my machine, but frontend is little slow, after re-login, when next button
+is clicked then it shows the previusly checked data, so , apology for this , i will keep working
