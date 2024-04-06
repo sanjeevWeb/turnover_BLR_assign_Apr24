@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "turnover assignment banglore",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sanjeev",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.3",
+    "pg": "^8.11.5",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.2",
+    "sib-api-v3-sdk": "^8.5.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "nodemon": "^3.1.0"
+  }
+}
