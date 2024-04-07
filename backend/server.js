@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 5000;
 
 //general(parsing) middleware
 app.use(cors({
-    origin: '*',
+    origin: 'https://turnover-blr-assign-apr24-4lsd-frontend.vercel.app',
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
