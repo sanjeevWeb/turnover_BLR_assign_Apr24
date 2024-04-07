@@ -6,7 +6,7 @@ const loginhere = document.querySelector('a')
 
 const signupForm = document.querySelector('#signupForm');
 
-const baseUrl = 'http://localhost:5000/api/v1';
+const baseUrl = 'https://turnover-blr-assign-apr24-9onp.vercel.app/api/v1';
 
 // go to login page 
 loginhere.addEventListener('click', (e) => {
