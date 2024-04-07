@@ -1,7 +1,8 @@
 let currentPage = 1;
 let previousCheckedIds;
 
-const baseUrl = "http://localhost:5000/api/v1"
+// const baseUrl = "http://localhost:5000/api/v1"
+const baseUrl = "https://turnover-blr-assign-apr24-9onp.vercel.app/api/v1"
 
 const fetchProducts = async (page) => {
     try {
